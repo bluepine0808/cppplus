@@ -1,8 +1,8 @@
 // artillery.cpp, Maggie Johnson
 // Description: A simple game with a little physics
-#include 
-#include 
-#include 
+#include <iostream>
+#include <math.h>
+#include <cstdlib>
 using namespace std;
 
 const int kNumShells = 10;  // allowed 10 shells per target
@@ -97,7 +97,7 @@ int Fire(int number_killed) {
 
 // This shows the introductory screen.
 void StartUp() {
-  cout <<  "Welcome to Artillery." <> done;
+  cout <<  "Welcome to Artillery." << done;
   } while (done != 'n');
   cout << "You killed " << killed << " of the enemy." << endl;
 }
